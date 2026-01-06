@@ -1,4 +1,4 @@
-# RULE-BASED TOKENIZER AND SENTNECE SEGMENTER WITH C++ CORE
+# RULE-BASED TOKENIZER AND SENTENCE SEGMENTER WITH C++ CORE
 
 ## Overview 
 This is a C++ implementation of a text tokenizer and sentnece segmenter that processes natural language text into tokens and groups them into sentnences using a Finite State Machine (FSM) approach.
