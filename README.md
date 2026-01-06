@@ -1,7 +1,7 @@
 # RULE-BASED TOKENIZER AND SENTENCE SEGMENTER WITH C++ CORE
 
 ## Overview 
-This is a C++ implementation of a text tokenizer and sentnece segmenter that processes natural language text into tokens and groups them into sentnences using a Finite State Machine (FSM) approach.
+This is a C++ implementation of a text tokenizer and sentence segmenter that processes natural language text into tokens and groups them into sentences using a Finite State Machine (FSM) approach.
 
 This project provides a pipeline for text processing:
 
@@ -15,7 +15,7 @@ This system handles complex language phenomena like abbreviations, contractions,
 - Identifies words, numbers, and punctuation
 - Handles contractions (e.g. "don't" and "I'll")
 - Processes hyphenated words (e.g. "state-of-the-art")
-- Recognized abbreviations (e.g. "Dr." and "US")
+- Recognizes abbreviations (e.g. "Dr." and "US")
 - Detects ellipses ("...")
 - Uses a finite state machine for robust character-by-character processing
 - Preserves token positino information in original text
@@ -27,13 +27,13 @@ This system handles complex language phenomena like abbreviations, contractions,
 - Groups tokens into sentence vectors
 
 ### Project Structure 
-|-- tokenizer.h/.cpp            # Main tokenier class with FSM implementation
-|-- char_classes.h/.cpp         # Character classification utilities
-|-- token.h                     # Token data structure and types
-|-- sentence_segmenter.h/.cpp   # Sentence segmentation logic
-|-- utils.h                     # String utility declarations
-|-- tss_main.cpp                # Main program entry point
-|-- tokenizer_tests.cpp         # Tokenizer test suite
+|-- tokenizer.h/.cpp             # Main tokenier class with FSM implementation
+|-- char_classes.h/.cpp          # Character classification utilities
+|-- token.h                      # Token data structure and types
+|-- sentence_segmenter.h/.cpp    # Sentence segmentation logic
+|-- utils.h                      # String utility declarations
+|-- tss_main.cpp                 # Main program entry point
+|-- tokenizer_tests.cpp          # Tokenizer test suite
 |-- sentence_segmenter_tests.cpp # Sentence segmenter test suite
 
 ### Token Types 
@@ -55,7 +55,7 @@ g++ -std=c++11 -o tss \
     char_classes.cpp \
     sentence_segmenter.cpp
 
-Then, type "./tss" an press enter. After doing so, input your message, press enter, and then Ctrl + D to see the program work.
+Then, type "./tss" and press enter. After doing so, input your message, press enter, and then Ctrl + D to see the program's output.
 
 ### Test Outline
 #### Build tokenizer tests
